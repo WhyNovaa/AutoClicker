@@ -30,8 +30,21 @@ AutoClicker::AutoClicker(QWidget *parent)
 
     ui->pick_pos_pButton->setStyleSheet("QPushButton{background: #87CEFA;"
                                         " color: #313240; font-size: 14px;}"
-                                        "QPushButton:hover{background: #87CEFA; border:2px; border-style:solid; border-color: #000080;}");
+                                        "QPushButton:hover{background: #87CEFA; border:2px; border-style:solid; border-color: #313240; border-radius: 7px;}");
     ui->pick_cur_pos_rButton->setStyleSheet("QRadioButton{color: #313240; font-size: 14px;}");
+
+    //this->setWindowIcon(QIcon(":/AutoClicker/resources/img/icon.ico"));
+
+    QFont font;
+    ui->click_per_sec_spinBox->setStyleSheet("QSpinBox{background-color: #87CEFA; color: #313240; font-size: 14px; }");
+    ui->x_lineEdit->setStyleSheet("QLineEdit{background-color: #87CEFA; color: #313240; font-size: 14px; border: 1px solid #313240; border-radius: 4px;}");
+    ui->y_lineEdit->setStyleSheet("QLineEdit{background-color: #87CEFA; color: #313240; font-size: 14px; border: 1px solid #313240; border-radius: 4px;}");
+
+    ui->pick_cur_pos_rButton->setStyleSheet("QRadioButton{color: #313240; font-size: 14px;}");
+
+    ui->click_per_sec_label->setStyleSheet("QLabel{color: #313240; font-size: 14px;}");
+    ui->x_label->setStyleSheet("QLabel{color: #313240; font-size: 14px;}");
+    ui->y_label->setStyleSheet("QLabel{color: #313240; font-size: 14px;}");
 
 }
 
